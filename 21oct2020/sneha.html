@@ -1,0 +1,80 @@
+<html><head>
+
+    <!--Title-->
+
+    <title>Document Structure</title>
+
+    <!--Adding Styles- CSS-->
+
+     <style>
+     
+        h1{
+            color:wheat;
+            background-color: black;
+             text-align: center
+
+        }
+
+      
+     </style>
+
+     <!--Meta Tags-->
+
+     <!-- <meta http-equiv="refresh" content="1"> -->
+
+     <!-- Java Script-->
+
+        <script>
+
+            // alert("Wednesday!");
+
+        </script>
+
+        <!--Refer other js and css files-->
+
+        <link href="doctstr.css">
+
+        <script src="docscript.js"></script>
+
+   </head>
+
+
+    <body>
+
+        <h1 id="header">This is my first HTML Document</h1>
+
+        <p id="para">This is my paragraph!</p>
+
+        <button onclick="changeH1()">Change H1</button>
+
+        
+
+        <!--Actual Content of the page-->
+
+        <!--
+
+
+             paragraphs, headings,tables,
+             lists, links etc...
+
+        -->
+
+        <script>
+
+
+                function changeH1(){
+                    event.preventDefault();
+                    document.getElementById("header").innerHTML="Stay Home, Stay Safe";
+                   document.getElementById('para').innerHTML= "paragraph updated!";
+
+                }
+
+
+        
+          
+        </script>
+
+
+    
+
+</body></html>
